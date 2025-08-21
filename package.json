@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon app.js",
     "qa": "cross-env NODE_ENV=qa node app.js"
@@ -13,9 +14,17 @@
   "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "bootstrap": "^5.3.7",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
     "express-session": "^1.18.2",
-    "expresss": "^0.0.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.3",
+    "nodemailer": "^7.0.5",
     "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
   }
 }
